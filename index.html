@@ -1,0 +1,106 @@
+index.html -->
+
+
+<!-- // index file for breakout game -->
+
+<!doctype html>
+<html>
+  <head>
+    <!-- the standard p5 drawing and animation library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"
+               integrity="sha512-N4kV7GkNv7QR7RX9YF/olywyIgIwNvfEe2nZtfyj73HdjCUkAfOBDbcuJ/cTaN04JKRnw1YG1wnUyNKMsNgg3g=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"></script>
+
+    <!-- the p5 sound library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js" integrity="sha512-WzkwpdWEMAY/W8WvP9KS2/VI6zkgejR4/KTxTl4qHx0utqeyVE0JY+S1DlMuxDChC7x0oXtk/ESji6a0lP/Tdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- you can also load the p5 library from a local javascript file if you want to host it yourself (uncomment the following 'script' tags)-->
+    <!--script src="../js/p5.js"></script -->
+    <!--script src="../js/p5.sound.min.js"></script -->
+
+    <!-- your custom sketch file -->
+    <script src="cat_runner.js"></script>
+    <style>
+
+      html
+      {
+        background-image: url(turcosa-forest-gif_orig.gif);
+        background-repeat : no-repeat;
+        background-position : center center;
+        background-attachment: fixed;
+        background-size: cover;
+
+      }
+      div{
+        font-size: 30px; 
+        color:white; 
+        background: rgba(0, 200, 50, 0.5); 
+        border: 10px solid white; 
+        margin: auto;
+        text-align: center;
+        width: 800px;
+      }
+      
+      #canvas_container {
+        margin: auto;
+        text-align: center;
+        border: 10px solid white;
+        border-bottom: 10px solid white;
+        padding-bottom: 20px;
+      }
+      a{
+        color:rgba(250,150,250,1);
+      }
+      a:visited{
+        color:rgba(250,150,250,1);
+      }
+
+    </style>
+  </head>
+  <body>
+    
+    <div><h1>Sword Master I</h1></div>
+    <div>
+      <!-- <h4>Click to Pause: </h4>  -->
+      <button style="margin:20px;" onclick="play_and_pause();">PLAY</button>
+    </div>
+    <div id="canvas_container"></div>
+    <div> 
+      <a href="index.html">Click Here to Reload the Page!</a> 
+      <p> <h3>Instructions:</h3> </p>
+      <p> <h4>Click PLAY to Start and Pause the Game</h4> </p>
+      <p> <h4>Use the ARROW KEYS to Jump(UP), Crouch(DOWN), and Run(RIGHT)</h4> </p>
+      <p> <h4>Use the LEFT ARROW to swing your Sword</h4> </p>
+    </div>
+    <!-- <div id="controls">
+      <select id="brush" oninput="changeBrush(this);">
+        <option value="ellipse">Ellipse</option>
+        <option value="rect">Rectangle</option>
+      </select>
+      <button onclick="clearCanvas();">Clear Canvas</button>
+      <button onclick="saveImage();">Save Image</button>
+
+      <br>
+      <h3>Color Picker <span id="preview"></span></h3>
+      R: <input type="range" id="r" min="0" max="255" step="1" value="128" oninput="changeRed(this);"><br>
+      G: <input type="range" id="g" min="0" max="255" step="1" value="128" oninput="changeGreen(this);"><br>
+      B: <input type="range" id="b" min="0" max="255" step="1" value="128" oninput="changeBlue(this);"><br>
+    </div> -->
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end
